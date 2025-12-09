@@ -11,6 +11,11 @@
             <field name="category_id"/>
             <field name="price"/>
             <field name="quantity"/>
+            <field name="vendor_id"/>
+            <field name="barcode"/>
+            <field name="cost_price"/>
+            <field name="sale_price"/>
+
         </list>
     </field>
 </record>
@@ -28,6 +33,18 @@
                         <field name="category_id"/>
                         <field name="price"/>
                         <field name="quantity"/>
+                        <field name="category"/>
+                        <field name="vendor_id"/>
+                        <field name="barcode"/>
+                        <field name="cost_price"/>
+                        <field name="sale_price"/>
+
+                    </group>
+                    <group>
+                        <field name="image" widget="image"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
                     </group>
                 </sheet>
             </form>
