@@ -9,7 +9,7 @@ class ProductItem(models.Model):
     _description=" home tools product"
 
 
-    name=fields.Char(string="product name",requirerd=True)
+    name=fields.Char(string="product name",required=True)
     price=fields.Float(string="price" ,required=True)
     quantity=fields.Integer(string="Available Quantity" ,default=0)
     category_id = fields.Many2one("product.category", string="Category")

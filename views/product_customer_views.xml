@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ========================= -->
+    <!--   TREE VIEW (List View)   -->
+    <!-- ========================= -->
+    <record id="view_product_customer_tree" model="ir.ui.view">
+        <field name="name">product.customer.list</field>
+        <field name="model">product.customer</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+            </list>
+        </field>
+    </record>
+    <!-- ========================= -->
+    <!--        FORM VIEW          -->
+    <!-- ========================= -->
+    <record id="view_product_customer_form" model="ir.ui.view">
+        <field name="name">product.customer.form</field>
+        <field name="model">product.customer</field>
+        <field name="arch" type="xml">
+            <form string="Customer">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="email"/>
+                            <field name="phone"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

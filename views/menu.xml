@@ -4,19 +4,30 @@
     <!-- Root menu for your module -->
     <menuitem id="menu_home_tools_root" name="Home Tools Shop" sequence="10"/>
 
-    <!-- Action to open the product.item tree view -->
-    <record id="action_shop_sale" model="ir.actions.act_window">
-        <field name="name">Shop Sale</field>
-        <field name="res_model">product.item</field>
-        <field name="view_mode">list,form</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your products here.
-            </p>
-        </field>
-    </record>
-
     <!-- Sales menu -->
-    <menuitem id="menu_sale" name="Sales" parent="menu_home_tools_root" action="action_shop_sale" sequence="1"/>
+    <menuitem id="menu_sale"
+              name="Sales"
+              parent="menu_home_tools_root"
+              action="action_shop_sale"
+              sequence="1"/>
+
+    <!-- Customer Management Root Menu -->
+    <menuitem id="menu_product_customer_root"
+              name="Customer Management"
+              parent="menu_home_tools_root"
+              sequence="2"/>
+
+    <!-- Customer List Menu -->
+    <menuitem id="menu_customer_list"
+              name="Customers"
+              parent="menu_product_customer_root"
+              action="action_product_customer"
+              sequence="1"/>
+
+    <menuitem id="menu_product_item_root" name="Products"/>
+<menuitem id="menu_product_item" name="Product Items" parent="menu_product_item_root" action="action_product_item"/>
+
+
+
 
 </odoo>

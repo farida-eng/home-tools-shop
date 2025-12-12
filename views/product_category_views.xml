@@ -29,11 +29,4 @@
         </field>
     </record>
 
-    <!-- Action -->
-    <record id="action_product_category" model="ir.actions.act_window">
-        <field name="name">Product Categories</field>
-        <field name="res_model">product.category</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
 </odoo>
